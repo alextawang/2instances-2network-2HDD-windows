@@ -90,16 +90,16 @@ resource "aws_instance" "imudssw_alen001" {
     volume_size = 30
   }
 
-  # Additional EBS Volume 1 (20 GB)
+  # Additional EBS Volume 1 (10 GB)
   ebs_block_device {
     device_name = "/dev/sdb"
-    volume_size = 20
+    volume_size = 10
   }
 
-  # Additional EBS Volume 2 (20 GB)
+  # Additional EBS Volume 2 (10 GB)
   ebs_block_device {
     device_name = "/dev/sdc"
-    volume_size = 20
+    volume_size = 10
   }
 }
 
